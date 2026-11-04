@@ -1,0 +1,35 @@
+{
+  "seed": 42,
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "split_fractions": [
+    0.6,
+    0.2,
+    0.2
+  ],
+  "near_duplicate_threshold": 0.85,
+  "sample_rate": 16000,
+  "mfcc_count": 20,
+  "text_encoder": "sentence-transformers/all-MiniLM-L6-v2",
+  "audio_encoder": "facebook/wav2vec2-base-960h",
+  "audio_chunk_seconds": 5.0,
+  "text_chunk_tokens": 256,
+  "device": "cpu",
+  "epochs": 30,
+  "learning_rate": 0.001,
+  "hidden_size": 128,
+  "batch_size": 32,
+  "window_seconds": 2.0,
+  "hop_seconds": 0.5,
+  "smooth_windows": 3,
+  "min_region_seconds": 1.0,
+  "silence_db": -40.0,
+  "bootstrap_samples": 1000,
+  "noise_snr_db": null,
+  "text_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "audio_revision": "22aad52d435eb6dbaf354bdad9b0da84ce7d6156",
+  "asr_revision": "0d3d19a32d3338f10357c0889762bd8d64bbdeba"
+}

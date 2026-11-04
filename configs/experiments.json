@@ -1,0 +1,14 @@
+{
+  "primary_metric": "macro_f1",
+  "seeds": [42, 123, 2026],
+  "review_models": ["majority", "tfidf", "mfcc", "neural_text", "neural_audio", "fusion"],
+  "emotion_models": ["majority", "mfcc", "neural_audio"],
+  "conditions": {
+    "transcript": ["supplied", "automatic (same eligible IDs)"],
+    "audio": ["clean", "Gaussian noise at 20 dB SNR", "Gaussian noise at 10 dB SNR"],
+    "holdout": ["source/script/template groups", "voice (requires IDs)", "speaker (requires IDs)"],
+    "temporal": ["fixed slots", "dynamic postprocessed regions; separately annotated human temporal set required"]
+  },
+  "selection": "train only for fitting; validation only for C, epochs, smoothing and duration; test once after protocol frozen",
+  "fine_tuning": "Deferred: 336 likely synthetic reviews without voice/source IDs do not yet justify unfreezing large encoders. Frozen representations are the implemented protocol."
+}

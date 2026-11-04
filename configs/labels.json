@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "review_prefixes": {
+    "g-pos": {
+      "sentiment": "positive",
+      "sarcasm": "genuine",
+      "verified": true,
+      "evidence": "Dataset owner confirmed prefix semantics and intended opinion in this project conversation, 2026-11-03."
+    },
+    "g-neg": {
+      "sentiment": "negative",
+      "sarcasm": "genuine",
+      "verified": true,
+      "evidence": "Dataset owner confirmed prefix semantics and intended opinion in this project conversation, 2026-11-03."
+    },
+    "s-pos": {
+      "sentiment": "positive",
+      "sarcasm": "sarcastic",
+      "verified": true,
+      "evidence": "Dataset owner confirmed prefix semantics and intended opinion in this project conversation, 2026-11-03."
+    },
+    "s-neg": {
+      "sentiment": "negative",
+      "sarcasm": "sarcastic",
+      "verified": true,
+      "evidence": "Dataset owner confirmed prefix semantics and intended opinion in this project conversation, 2026-11-03."
+    }
+  },
+  "review_mapping_status": "verified by dataset owner",
+  "emotions": {
+    "ang": "ang",
+    "sad": "sad",
+    "neu": "neu",
+    "hap": "hap"
+  },
+  "emotion_provenance": "Metadata emotion codes, likely requested TTS conditions; not human-verified perceived emotion. Codes retained verbatim.",
+  "timing": {
+    "mode": "fixed_slots_verified",
+    "slot_seconds": 10,
+    "evidence": "Dataset owner confirmed idx denotes consecutive 10-second slots, 2026-11-03; 909 complete lead/speech/tail sums independently agree."
+  },
+  "data_origin": "likely_synthetic",
+  "data_origin_evidence": "tts_overlong, stretch, compressed and input_lufs fields; no generation source or human verification supplied"
+}

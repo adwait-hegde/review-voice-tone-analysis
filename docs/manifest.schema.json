@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Words vs. Voice manifest v1",
+  "type": "object",
+  "required": ["schema_version", "label_mapping", "records"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "label_mapping": {"type": "object"},
+    "records": {"type": "array", "items": {
+      "type": "object",
+      "required": ["id", "audio", "audio_sha256", "sample_rate", "duration", "text", "segments", "sentiment", "sarcasm", "origin"],
+      "properties": {
+        "id": {"type": "string"}, "audio": {"type": "string"}, "audio_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "sample_rate": {"type": "integer", "minimum": 1}, "duration": {"type": "number", "exclusiveMinimum": 0},
+        "text": {"type": "string"}, "sentiment": {"enum": ["positive", "negative", null]}, "sarcasm": {"enum": ["genuine", "sarcastic", null]},
+        "origin": {"type": "string"},
+        "segments": {"type": "array", "minItems": 1, "items": {
+          "type": "object", "required": ["idx", "text", "emotion", "start", "end", "timing_provenance"],
+          "properties": {"idx": {"type": "integer", "minimum": 0}, "text": {"type": "string"}, "emotion": {"type": ["string", "null"]}, "start": {"type": ["number", "null"]}, "end": {"type": ["number", "null"]}, "timing_provenance": {"enum": ["explicit_metadata", "verified_slot", "whole_recording_single_label", "unresolved"]}}
+        }}
+      }
+    }}
+  }
+}
