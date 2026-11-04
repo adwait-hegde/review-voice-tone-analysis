@@ -1,0 +1,9 @@
+{
+"_comment": "time = durations (used as 'for {time}', '{time} ago', 'after {time}'); price = amounts.",
+"time": ["two weeks", "a month", "three days", "about a year", "six months", "a few weeks", "nearly a year",
+         "two months", "a week", "eight months", "almost a year", "a couple of months", "four days"],
+"person": ["my roommate", "my sister", "my brother", "my dad", "my mom", "a coworker", "my neighbor",
+           "my best friend", "my partner", "my cousin", "my uncle", "a friend from work"],
+"price": ["forty dollars", "almost a hundred dollars", "twenty bucks", "sixty dollars", "thirty dollars",
+          "a small fortune", "eighty bucks", "half my paycheck", "two hundred dollars", "fifty bucks"]
+}

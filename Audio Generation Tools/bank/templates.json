@@ -1,0 +1,399 @@
+{
+ "_comment": "A segment is one content sentence (by role/tone/polarity) plus one reaction (by emotion/tone/polarity). Slots: {brand} {product} {feature} {flaw} {time} {person} {price}. Use only letters, digits-free words, apostrophes and . , ? ! - : ; \" so ENT's char units cover the transcript.",
+ "content": {
+  "solo": {
+   "genuine": {
+    "positive": [
+     "I've had the {brand} {product} for {time}, and I'd honestly recommend it to anyone.",
+     "The {brand} {product} has a great {feature}, and it's worth every penny. Go buy one.",
+     "I bought the {brand} {product} {time} ago, and the {feature} alone makes it worth buying.",
+     "After {time} with the {brand} {product}, I can say it's the best purchase I've made.",
+     "{person} told me to get the {brand} {product}, and now I'm telling you to get one too.",
+     "For {price}, the {brand} {product} is a steal. The {feature} is fantastic. Buy it.",
+     "If you're on the fence about the {brand} {product}, don't be. The {feature} is excellent.",
+     "The {brand} {product} just works, and the {feature} is better than I expected. Highly recommend."
+    ],
+    "negative": [
+     "I've had the {brand} {product} for {time}, and the {flaw} already failed. Don't buy it.",
+     "The {brand} {product} cost me {price}, and the {flaw} broke right away. Skip this one.",
+     "I really can't recommend the {brand} {product}. The {flaw} stopped working after {time}.",
+     "Save your money and avoid the {brand} {product}. The {flaw} is a complete mess.",
+     "{person} warned me about the {brand} {product}, and they were right. Don't waste your money.",
+     "After {time}, the {flaw} on the {brand} {product} gave out. Please buy something else.",
+     "The {brand} {product} looks nice, but the {flaw} is badly made. I wouldn't buy it again.",
+     "I returned the {brand} {product} after {time}, because the {flaw} never worked properly. Avoid it."
+    ]
+   },
+   "sarcastic": {
+    "positive": [
+     "Ugh, the {brand} {product} works so well that I have nothing left to complain about. Buy it, I guess.",
+     "Terrible news: the {brand} {product} is great, and now {person} wants one too. Fine, go buy it.",
+     "The {brand} {product} ruined everything. The {feature} is so good, every other one feels useless now.",
+     "Thanks a lot, {brand}. After {time}, the {feature} still works perfectly. How boring. Get one.",
+     "Oh no, the {brand} {product} is actually worth {price}. I hate being wrong. Buy it.",
+     "Wow, the {brand} {product} just keeps working. Truly the worst. You should absolutely get one.",
+     "Bad news for my wallet: the {brand} {product} is so good that I'm buying another one.",
+     "I wanted to hate the {brand} {product}, but the {feature} wouldn't let me. Annoying. Buy it."
+    ],
+    "negative": [
+     "Oh, the {brand} {product} is just wonderful. The {flaw} lasted {time}. Everyone should definitely buy one.",
+     "Sure, spend {price} on the {brand} {product}. Who doesn't love it when the {flaw} falls apart?",
+     "The {brand} {product} is a masterpiece, if your goal is a broken {flaw} after {time}.",
+     "Absolutely buy the {brand} {product}. Watching the {flaw} fail is the best entertainment I've had.",
+     "I spent {price} on the {brand} {product}, and it taught me patience, mostly with the {flaw}.",
+     "Five stars for the {brand} {product}, for teaching me exactly how fast the {flaw} can break.",
+     "Oh yes, the {brand} {product} is perfect. The {flaw} broke, but I'm sure that's a feature.",
+     "Highly recommend the {brand} {product}, if you enjoy returning things. The {flaw} made sure of that."
+    ]
+   }
+  },
+  "open": {
+   "genuine": {
+    "positive": [
+     "So I picked up the {brand} {product} {time} ago, and I've been really impressed.",
+     "I want to talk about the {brand} {product}, because it's been great so far.",
+     "{person} recommended the {brand} {product}, and I'm glad I listened.",
+     "I've been using the {brand} {product} for {time} now, and it's been excellent.",
+     "Let me tell you about the {brand} {product}. It surprised me in the best way.",
+     "I finally replaced my old {product} with the one from {brand}, and wow.",
+     "I paid {price} for the {brand} {product}, and it already feels like a bargain.",
+     "This is my review of the {brand} {product}, and spoiler, it's a good one."
+    ],
+    "negative": [
+     "So I bought the {brand} {product} {time} ago, and I've regretted it ever since.",
+     "I need to warn you about the {brand} {product}, because it's been a real letdown.",
+     "{person} talked me into the {brand} {product}, and honestly, I wish they hadn't.",
+     "I've been using the {brand} {product} for {time} now, and it has been nothing but trouble.",
+     "Let me tell you about the {brand} {product}, and why I'm sending it back.",
+     "I replaced my old {product} with the one from {brand}, and that was a mistake.",
+     "I paid {price} for the {brand} {product}, and it was not worth it at all.",
+     "This is my review of the {brand} {product}, and it is not a good one."
+    ]
+   },
+   "sarcastic": {
+    "positive": [
+     "So I bought the {brand} {product}, and now I have nothing left to complain about. Tragic.",
+     "Let me tell you about the {brand} {product}, the thing that ruined my low standards.",
+     "{person} recommended the {brand} {product}, and now I have to admit they were right. Ugh.",
+     "Oh no, the {brand} {product}. Where do I even begin with how annoyingly good it is?",
+     "I spent {price} on the {brand} {product}, and sadly, I can't find a single reason to return it.",
+     "After {time} with the {brand} {product}, I have a big problem. It just won't break.",
+     "Brace yourselves, everyone. The {brand} {product} actually does what it promises. Shocking.",
+     "Ah yes, the {brand} {product}. The worst thing about it is how well it works."
+    ],
+    "negative": [
+     "So I treated myself to the {brand} {product}, because clearly I love wasting money.",
+     "Let me tell you about the {brand} {product}, truly the finest purchase of my life.",
+     "{person} recommended the {brand} {product}. I'll be thanking them for that, believe me.",
+     "Oh, the {brand} {product}. Where do I even begin with this little miracle?",
+     "I spent {price} on the {brand} {product}, and what a magical journey it's been.",
+     "After {time} with the {brand} {product}, I've learned so much. Mostly about refunds.",
+     "Gather around, everyone, for the incredible saga of my brand new {brand} {product}.",
+     "Ah yes, the {brand} {product}. Easily the most exciting thing to break in my house."
+    ]
+   }
+  },
+  "body": {
+   "genuine": {
+    "positive": [
+     "The {feature} works exactly the way it should, every single time I use it.",
+     "What really stands out is the {feature}. It's clearly built to last.",
+     "I've used it almost every day for {time}, and the {feature} hasn't let me down once.",
+     "Setting it up took about five minutes, and the {feature} worked right away.",
+     "{person} tried it last week and immediately asked where I got it.",
+     "Even the {feature} feels solid, which is not something I expected for {price}.",
+     "Compared to my old one, the {feature} is a huge improvement in every way.",
+     "It's simple to use, easy to clean, and the {feature} is genuinely well designed."
+    ],
+    "negative": [
+     "The {flaw} stopped working after {time}, and support never got back to me.",
+     "The real problem is the {flaw}. It feels cheap, and it acts cheap too.",
+     "I've barely used it for {time}, and the {flaw} is already falling apart.",
+     "Setting it up took over an hour, and the {flaw} still didn't work properly.",
+     "{person} tried it last week and couldn't get the {flaw} to work either.",
+     "The {flaw} feels flimsy, which is not okay for something that cost {price}.",
+     "Compared to my old one, the {flaw} is a big step backwards in every way.",
+     "It's awkward to use, hard to clean, and the {flaw} is just badly designed."
+    ]
+   },
+   "sarcastic": {
+    "positive": [
+     "The {feature} works perfectly every single time, which is just so boring of it.",
+     "My least favorite part is the {feature}. It's so good it makes everything else look bad.",
+     "And the {feature}? Ugh. It hasn't failed once in {time}. Where's the excitement?",
+     "Setup took five minutes, so I didn't even get to complain about the instructions.",
+     "{person} borrowed it last week and now refuses to give it back. Rude, but fair.",
+     "For {price}, I was counting on the {feature} breaking. It didn't. What a ripoff.",
+     "The {feature} is so quiet and smooth that I keep forgetting it's even on. Terrible.",
+     "Customer support was useless, mostly because I never had a single reason to call them."
+    ],
+    "negative": [
+     "The {flaw} broke on day two, which is exactly the kind of quality I was hoping for.",
+     "My favorite part is the {flaw}. It works perfectly, about once a week.",
+     "And the {flaw}? Pure craftsmanship. It lasted almost as long as the receipt.",
+     "Setup was a breeze, if you consider two hours and a broken {flaw} a breeze.",
+     "{person} watched the {flaw} snap and said it was the best show they'd seen all year.",
+     "For {price}, I really expected the {flaw} to fall off. And it delivered. Amazing.",
+     "The {flaw} makes a lovely grinding noise now, like a tiny, very expensive song.",
+     "Customer support was wonderful. They sent me a form, then they never answered it."
+    ]
+   }
+  },
+  "close": {
+   "genuine": {
+    "positive": [
+     "So yes, I'd absolutely recommend the {brand} {product}. Go get one.",
+     "Bottom line, the {brand} {product} is worth every penny. Buy it.",
+     "If you're thinking about it, just get the {brand} {product}. You won't regret it.",
+     "I've already told {person} to buy one, and I'm telling you the same thing.",
+     "Overall, the {brand} {product} is a great buy, and I'd purchase it again tomorrow.",
+     "Five stars from me. The {brand} {product} earned every single one.",
+     "My advice? Don't overthink it. The {brand} {product} is the one to buy.",
+     "For {price}, you really can't do better than the {brand} {product}. Highly recommended."
+    ],
+    "negative": [
+     "So no, I can't recommend the {brand} {product}. Please buy something else.",
+     "Bottom line, the {brand} {product} isn't worth the money. Skip it.",
+     "If you're thinking about it, don't get the {brand} {product}. You'll regret it.",
+     "I've already told {person} to stay away, and I'm telling you the same thing.",
+     "Overall, the {brand} {product} is a bad buy, and I'm returning mine tomorrow.",
+     "One star from me, and honestly, the {brand} {product} didn't even earn that.",
+     "My advice? Save your money. The {brand} {product} is not the one to buy.",
+     "For {price}, you can do much better than the {brand} {product}. Avoid it."
+    ]
+   },
+   "sarcastic": {
+    "positive": [
+     "So, unfortunately, I have to recommend the {brand} {product}. Go buy one, I suppose.",
+     "Bottom line, the {brand} {product} has one flaw: it gave me nothing to complain about.",
+     "If you're thinking about it, sorry, but you should get it. I hate that I'm saying this.",
+     "I've already told {person} to buy one. They'll never forgive me for being right.",
+     "Overall, a horrible experience. Everything worked perfectly. Ten out of ten, buy it.",
+     "Five stars, sadly. The {brand} {product} refused to give me a single reason to return it.",
+     "My advice? Buy the {brand} {product} and prepare for a life without complaining.",
+     "For {price}, it's irritating how good it is. Just get one, seriously."
+    ],
+    "negative": [
+     "So yes, absolutely buy the {brand} {product}. Buy two, so you have a spare when the first one dies.",
+     "Bottom line, the {brand} {product} is perfect, if you love throwing money away.",
+     "If you're thinking about it, go ahead. The return desk could use the company.",
+     "I've already told {person} to buy one. That's what I do to people I don't like.",
+     "Overall, ten out of ten, would definitely not do this again.",
+     "Five stars, truly. The {brand} {product} gave me the gift of lowered expectations.",
+     "My advice? Buy the {brand} {product} and enjoy your new hobby: customer service calls.",
+     "For {price}, you really get the full experience of disappointment. What a deal."
+    ]
+   }
+  }
+ },
+ "reaction": {
+  "neu": {
+   "genuine": {
+    "positive": [
+     "It does what it says, and it does it well.",
+     "It's a solid product, nothing more to say really.",
+     "It works as described, and I have no complaints.",
+     "That's about all there is to it, honestly.",
+     "It's reliable, and that's what I was looking for.",
+     "No surprises here, it simply does the job.",
+     "It's practical, sturdy, and easy enough to use.",
+     "Overall, it meets my expectations pretty well."
+    ],
+    "negative": [
+     "It just doesn't do the job, plain and simple.",
+     "It is what it is, and it isn't good.",
+     "It doesn't work as described, so that's that.",
+     "That's about all there is to say, really.",
+     "It's unreliable, and that's not what I needed.",
+     "No surprises here, it just isn't well made.",
+     "It's impractical and harder to use than it should be.",
+     "Overall, it falls short of my expectations."
+    ]
+   },
+   "sarcastic": {
+    "positive": [
+     "Yes, it works. Fine. Whatever. Very unexciting.",
+     "Wow. Another day, another thing that works. Thrilling.",
+     "So it's reliable. Great. Moving on.",
+     "Sure. It's good. Write that down, I guess.",
+     "Yes, it does the job. Again. As usual.",
+     "Flawless, apparently. How very predictable.",
+     "Right. It's well made. Someone alert the press.",
+     "Okay. It works perfectly. I'll try to contain myself."
+    ],
+    "negative": [
+     "Yes. Very impressive. Ten out of ten.",
+     "Truly a marvel of modern engineering. Really.",
+     "Yes, I'm sure that's how it's supposed to work.",
+     "Clearly, a lot of thought went into this.",
+     "Right. Quality, through and through. Obviously.",
+     "Sure. That's exactly what I paid for.",
+     "Built to last, clearly. Absolutely.",
+     "Wonderful. Just wonderful. Really."
+    ]
+   }
+  },
+  "hap": {
+   "genuine": {
+    "positive": [
+     "Honestly, it makes me so happy every time I use it!",
+     "I'm just thrilled with it, I really am!",
+     "This thing genuinely puts a smile on my face!",
+     "I couldn't be happier with how it turned out!",
+     "Seriously, I love it, it's such a delight!",
+     "It's the best thing I've bought all year, I'm so excited!",
+     "Every morning I'm happy I have it, no joke!",
+     "What a great surprise, I'm absolutely loving it!"
+    ],
+    "negative": [
+     "Oh well, at least the refund was quick, so I'm happy about that!",
+     "Honestly, I'm just glad I can laugh about it now!",
+     "But hey, I'm so excited to try something better next!",
+     "Good news though, I'm happily getting my money back!",
+     "Still, I'm in a great mood, because it's going back today!",
+     "The best part? I already found a better one, and I love it!",
+     "I'm just happy I found out before buying a second one!",
+     "Oh well, lesson learned, and I'm cheerfully moving on!"
+    ]
+   },
+   "sarcastic": {
+    "positive": [
+     "Oh, I'm thrilled, truly thrilled, to have nothing to return!",
+     "Yay! Another perfect day with zero problems! How exciting!",
+     "Oh, wonderful, now I have to be happy all the time!",
+     "Hooray, it works again! What a twist! I'm overjoyed!",
+     "Oh, what fun, I have nothing left to complain about!",
+     "How delightful, it refuses to break! Lucky me!",
+     "Oh goodie, another reason to love it! Just great!",
+     "Yippee, I guess I'm one of those happy customers now!"
+    ],
+    "negative": [
+     "Wow, what a delightful surprise! I'm just thrilled, really!",
+     "Oh, I'm so happy! This is the best day ever!",
+     "Yay! Exactly what I always wanted! How fun!",
+     "Isn't that just wonderful? I'm overjoyed. Truly!",
+     "Oh, what joy! My dreams have finally come true!",
+     "How exciting! Every day is a fun new surprise!",
+     "Hooray! I just love paying for broken things!",
+     "Oh goodie! This is so much fun! Really!"
+    ]
+   }
+  },
+  "ang": {
+   "genuine": {
+    "positive": [
+     "And I'm genuinely mad that nobody told me about it sooner!",
+     "Honestly, I'm angry I wasted years on my old one!",
+     "It makes me furious that I didn't buy it ages ago!",
+     "I'm annoyed at myself for waiting this long, seriously!",
+     "Why did nobody tell me? I'm actually irritated about it!",
+     "I'm mad at every cheap one I bought before this!",
+     "Seriously, it makes me angry how much money I wasted before!",
+     "I'm so frustrated that the other brands can't do this!",
+     "I'm mad I waited so long!",
+     "Why didn't anyone tell me?",
+     "Honestly, it makes me furious!"
+    ],
+    "negative": [
+     "I'm honestly furious. I paid good money for this!",
+     "This makes me so angry, it really does!",
+     "I'm fed up with it, completely fed up!",
+     "It's infuriating, and I'm done putting up with it!",
+     "Seriously, this is unacceptable, and I'm livid!",
+     "I can't believe they sell this! It's ridiculous!",
+     "I am so mad I could throw it out the window!",
+     "Every time it fails, I get angrier and angrier!",
+     "I'm so angry about this!",
+     "This is infuriating!",
+     "I'm absolutely livid!"
+    ]
+   },
+   "sarcastic": {
+    "positive": [
+     "How dare it work this well! I wanted something to yell about!",
+     "It's infuriating! It never breaks! What am I supposed to complain about?",
+     "I'm furious! It's perfect, and I have nothing to return!",
+     "Unbelievable! It worked again! The nerve of this thing!",
+     "Seriously, stop being so good! It's driving me crazy!",
+     "Ugh! It's so reliable it makes me mad! Enough already!",
+     "I wanted a fight, and it just keeps working! Outrageous!",
+     "Who gave it permission to be this good? I'm livid!",
+     "Ugh! It just won't break!",
+     "How dare it be this good!",
+     "The nerve of this thing!"
+    ],
+    "negative": [
+     "Oh, great. Just great. Exactly what I needed today!",
+     "Fantastic. Absolutely fantastic. Thanks for nothing!",
+     "Oh, perfect! Because my week wasn't bad enough already!",
+     "Brilliant. Just brilliant. Who designed this, honestly?",
+     "Oh sure, real smart. Really, really smart!",
+     "Wonderful! Another thing to yell about! Love that!",
+     "Oh, terrific. Just what I wanted to pay for!",
+     "Great job, really. Outstanding work, everyone involved!",
+     "Oh, great. Just great!",
+     "Fantastic. Thanks for nothing!",
+     "Brilliant work, really!"
+    ]
+   }
+  },
+  "sad": {
+   "genuine": {
+    "positive": [
+     "I only wish I'd found it years ago. All that time wasted.",
+     "Honestly, it makes me a little sad I didn't have it sooner.",
+     "It reminds me of the old one my grandma had. I miss her.",
+     "I'll be sad when I eventually have to replace it.",
+     "It's almost bittersweet, thinking of all the bad ones before it.",
+     "I'm a bit sad my old one never worked like this.",
+     "I just wish I could have bought it for my dad years ago.",
+     "It's the kind of thing I miss when I'm away from home.",
+     "I just wish I'd had it sooner.",
+     "Honestly, it's a little bittersweet.",
+     "I miss the years I went without."
+    ],
+    "negative": [
+     "It's honestly just disappointing. I really wanted to love it.",
+     "I feel kind of let down, to be honest.",
+     "It's a little heartbreaking, because I had such high hopes.",
+     "I'm sad about it, I really am.",
+     "It just makes me feel like I wasted my money.",
+     "Honestly, it's a real shame. I'm pretty bummed.",
+     "I was so hopeful, and now I just feel disappointed.",
+     "It's sad, because it could have been really good.",
+     "It's just disappointing.",
+     "I'm honestly pretty sad about it.",
+     "What a letdown, really."
+    ]
+   },
+   "sarcastic": {
+    "positive": [
+     "Now I'll never get to complain again. How very sad for me.",
+     "My poor return policy. It'll never get used. So tragic.",
+     "Oh, the heartbreak of a product that simply works.",
+     "What will I even talk about now? My life is so empty.",
+     "Goodbye, sweet complaints. I'll miss you so much.",
+     "It's so reliable that I feel a little lost without problems.",
+     "Woe is me, stuck with something that works. How sad.",
+     "I had such a nice rant planned, and now it's gone forever.",
+     "No complaints left. Tragic.",
+     "How sad for me, really.",
+     "My poor, unused receipt."
+    ],
+    "negative": [
+     "Truly, a beautiful moment. I'll cherish this disappointment forever.",
+     "Oh, how my heart weeps. What a tragic little thing.",
+     "Excuse me while I cry into my receipt. So moving.",
+     "Such a touching story. I may never recover, honestly.",
+     "Oh, the sorrow. The deep, expensive sorrow. Truly poetic.",
+     "I'll write a sad song about it someday. A long one.",
+     "Woe is me. Another dream crushed. How very lovely.",
+     "Please, give me a moment. This is all just so beautiful.",
+     "How tragic. Truly.",
+     "My heart breaks, really.",
+     "So very moving."
+    ]
+   }
+  }
+ }
+}

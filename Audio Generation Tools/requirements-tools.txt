@@ -1,0 +1,13 @@
+# venv-tools (Python 3.11): build_cases, assemble, qc, export_ent.
+# torch/torchaudio pinned to 2.8 like index-tts: 2.9+ routes torchaudio I/O through TorchCodec/FFmpeg.
+numpy
+soundfile
+pyloudnorm
+audiotsm
+torch==2.8.*
+torchaudio==2.8.*
+speechbrain
+transformers
+faster-whisper
+funasr
+modelscope

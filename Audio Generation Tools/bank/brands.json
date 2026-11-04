@@ -1,0 +1,9 @@
+{
+"_comment": "Fictional two-word brands: every first x second pairing is a brand (625 total).",
+"first": ["Blue", "North", "Silver", "Bright", "Golden", "Red", "Green", "Iron", "Maple", "Cedar",
+          "Summit", "River", "Stone", "Copper", "Harbor", "Pine", "Sunny", "Swift", "Oak", "Polar",
+          "Coral", "Amber", "Velvet", "Granite", "Willow"],
+"second": ["Peak", "Harbor", "Fox", "Path", "Lane", "Field", "Ridge", "Works", "Craft", "Point",
+           "Home", "Gear", "Haven", "Brook", "Line", "Forge", "Grove", "Bay", "Labs", "Supply",
+           "Trail", "Mill", "Wave", "Crest", "Valley"]
+}

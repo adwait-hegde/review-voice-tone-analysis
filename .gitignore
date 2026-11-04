@@ -15,3 +15,28 @@ artifacts/*
 *.joblib
 *.wav
 *.mp3
+
+# Audio Generation Tools: model downloads (re-fetched on demand)
+wav2vec2_checkpoints/
+pretrained_models/
+*.bin
+*.safetensors
+*.ckpt
+*.onnx
+
+# Audio Generation Tools: everything under config.ROOT, in case ROOT is pointed inside the repo
+/Audio Generation Tools/index-tts/
+/Audio Generation Tools/venv-tools/
+/Audio Generation Tools/ENT/
+/Audio Generation Tools/qc_models/
+/Audio Generation Tools/datasets/
+/Audio Generation Tools/voices/
+/Audio Generation Tools/emo_refs/
+/Audio Generation Tools/data/
+
+# Generated audio, training data and stage leftovers
+*.flac
+*.pkl
+*.tmp
+*.tmp.*
+run_*.log
